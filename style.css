@@ -3,6 +3,8 @@ body {
     overflow-x: hidden;
 }
 
+/*---------------Navigation-------------------------*/
+
 .navbar {
     text-transform: uppercase;
 }
@@ -44,7 +46,10 @@ body {
     color: white !important;
     font-weight: 400 !important;
 }
+
 }
+
+/*------------------Landing page-----------------------------*/
 .carousel-item {
     height: 100vh;
     min-height: 300px;
@@ -81,3 +86,6 @@ body {
     padding: 15px 40px;
     border-radius: 50px;
 }
+
+
+
