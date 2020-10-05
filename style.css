@@ -1,9 +1,16 @@
 
+
+
+
+
+
+
+
 body {
     overflow-x: hidden;
 }
 
-/*---------------Navigation-------------------------*/
+
 
 .navbar {
     text-transform: uppercase;
@@ -26,9 +33,7 @@ body {
     color: white !important;
 }
 
-.w-100 {
-    height: 100vh;
-}
+
 
 @media only screen and (max-width: 567px)
 {
@@ -49,14 +54,15 @@ body {
 
 }
 
-/*------------------Landing page-----------------------------*/
-.carousel-item {
-    height: 100vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
+
+#landingPage {
+    position: relative;
+    background: url(images/carousel2.jpg);
+    min-height: 100vh;
     background-size: cover;
 }
+
+
 
 .carousel-caption {
     bottom: 40vh;
@@ -86,6 +92,5 @@ body {
     padding: 15px 40px;
     border-radius: 50px;
 }
-
 
 
