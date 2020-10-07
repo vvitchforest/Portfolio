@@ -12,6 +12,7 @@ $card-border-width: 0.001rem;
 $card-inner-border-radius: 0;
 
 
+
 $spacers: (
         0: 0,
         1: ($spacer * .25),
@@ -28,6 +29,7 @@ $theme-colors: (
 
         "dark": #000,
         "secondary": #696969,
+        "opaque": rgba(0, 0, 0, 0.8),
 
 );
 

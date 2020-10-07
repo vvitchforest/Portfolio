@@ -12,12 +12,10 @@
 <body>
 
 <!-------------------Landing Page----------------------->
-<div class="container-fluid" id="landingPage">
-    <nav class="navbar fixed-top navbar-expand-sm navbar-light px-4 py-4">
-        <a class="navbar-brand" href="index.html">
-            <ion-icon name="leaf"></ion-icon>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+<div id="landingPage">
+
+    <nav class="navbar navbar-expand-sm bg-opaque navbar-dark px-4 py-3 text-uppercase">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon"></span>
@@ -33,23 +31,155 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
             </ul>
         </div>
     </nav>
-    <div class="d-flex justify-content-center py-8">
-        <div class="text-center">
-            <h1>Irina Konovalova</h1>
-            <div class="row d-flex justify-content-center pb-2">
-                <div class="col-lg-10">
+    <div id="landingPageOverlay">
+        <div class="d-flex justify-content-center py-8">
+            <div class="text-center">
+                <h1>Irina Konovalova</h1>
+                <div class="d-flex justify-content-center pb-2">
                     <p>Tällä sivustola esittelen Digitaalisen Median Perusteet-kurssia varten palautetut tehtävät. </p>
                 </div>
+                <a class="btn btn-outline-light text-uppercase" type="button" href="#portfolio">Portfolio</a>
             </div>
-            <a class="btn btn-outline-light text-uppercase" type="button" href="#portfolio">Portfolio</a>
         </div>
     </div>
+</div>
+
+<!---------------------Portfolio------------------------->
+<div id="portfolio">
+    <section class="container" id="media">
+        <h1 class="text-center p-4">Portfolio</h1>
+        <h3 class="text-center pb-5">Media</h3>
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/jazK-9Rrj5k"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">After Effects</h5>
+                        <p class="card-text">Parallax Effect kuva-animaatio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Q2TmLhJ5V2E"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Moniraita</h5>
+                        <p class="card-text">Moniraitaääni tehtävä.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/gnrlF8F4F5o"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Videoeditoinnin perusteet</h5>
+                        <p class="card-text pb-5">Videeditoinnin perusteet tehtävä. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/geJp_NM1UAw"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Videosprintti</h5>
+                        <p class="card-text">Videosprintin aiheena on Älykkäiden ratkaisujen kehittäjäkampus. Video on
+                            kuvattu ryhmässä, johon osallistivat Joonas Lehtoranta, Oskari Piiroinen ja Irina
+                            Konovalova. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark border-secondary mb-4">
+                    <img class="card-img-top" src="media/sarjakuvahahmo.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text pb-2">Sarjakuvahahmo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h3 class="text-center pb-5 pt-4">Web</h3>
+    <div class="container" id="web">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">jQuery 1-3</h5>
+                        <a href="web/jQuery1-3/jqbasiclab1.html" class="btn btn-primary btn-sm" target="_blank">Linkki
+                            tehtävään</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">jQuery 4</h5>
+                        <a href="web/jQuery4/ex4.html" class="btn btn-primary btn-sm" target="_blank">Linkki
+                            tehtävään</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">jQuery 5</h5>
+                        <a href="web/jQuery5/animate.html" class="btn btn-primary btn-sm" target="_blank">Linkki
+                            tehtävään</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title"> jQuery + Ajax & Bootstrap 2</h5>
+                        <a href="web/Bootstrap2/ajax.html" class="btn btn-primary btn-sm" target="_blank">Linkki
+                            tehtävään</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap 1</h5>
+                        <a href="web/Bootstrap1/index.html" class="btn btn-primary btn-sm" target="_blank">Linkki
+                            tehtävään</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap Kustomointi</h5>
+                        <a href="web/BootstrapKustomointi/index.html" class="btn btn-primary btn-sm" target="_blank">Linkki
+                            tehtävään</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="btn btn-info align-items-center" type="button" href="#landingPage" id="topButton">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
 </div>
 
 <!---------------------About------------------------------>
@@ -62,125 +192,20 @@
     <article class="row d-flex justify-content-center">
         <div class="col-lg-8">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap
                 into
                 electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
                 release of
-                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                like
                 Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </article>
 </section>
 
-<!---------------------Portfolio------------------------->
-<section class="container" id="portfolio">
-    <h1 class="text-center p-4">Portfolio</h1>
-    <h3 class="text-center pb-5">Media</h3>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card bg-dark border-secondary mb-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="media/ParallaxEffect.mp4" allowfullscreen
-                            aria-controls="true"></iframe>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Photo animation</h5>
-                    <p class="card-text">This photo animation is called Parallax Effect.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card bg-dark border-secondary mb-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Q2TmLhJ5V2E" allowfullscreen></iframe>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Moniraita</h5>
-                    <p class="card-text">Moniraitaääni tehtävä.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card bg-dark border-secondary mb-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/gnrlF8F4F5o" allowfullscreen></iframe>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Videoeditoinnin perusteet</h5>
-                    <p class="card-text pb-5">Videeditoinnin perusteet tehtävä. </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card bg-dark border-secondary mb-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/geJp_NM1UAw" allowfullscreen></iframe>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Videosprintti</h5>
-                    <p class="card-text">Videosprintin aiheena on Älykkäiden ratkaisujen kehittäjäkampus. Video on
-                        kuvattu ryhmässä, johon osallistivat Joonas Lehtoranta, Oskari Piiroinen ja Irina
-                        Konovalova. </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card bg-dark border-secondary mb-4">
-                <img class="card-img-top" src="media/sarjakuvahahmo.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text pb-2">Sarjakuvahahmo.</p>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-</section>
-
-<h3 class="text-center pb-5 pt-4">Web</h3>
-<div class="container" id="web">
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="card bg-dark border-secondary mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">jQuery 1-3</h5>
-                    <a href="web/jQuery1-3/jqbasiclab1.html" class="btn btn-primary btn-sm" target="_blank">Linkki
-                        tehtävään</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card bg-dark border-secondary mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">jQuery 4</h5>
-                    <a href="web/jQuery4/ex4.html" class="btn btn-primary btn-sm" target="_blank">Linkki
-                        tehtävään</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card bg-dark border-secondary mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">jQuery 5</h5>
-                    <a href="web/jQuery5/animate.html" class="btn btn-primary btn-sm" target="_blank">Linkki
-                        tehtävään</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card bg-dark border-secondary mb-4">
-                <div class="card-body">
-                    <h5 class="card-title"> jQuery + Ajax & Bootstrap 2</h5>
-                    <a href="web/Bootstrap2/ajax.html" class="btn btn-primary btn-sm" target="_blank">Linkki
-                        tehtävään</a>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
