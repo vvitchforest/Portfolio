@@ -1,27 +1,37 @@
 
-body {
-    overflow-x: hidden;
+body, html {
+    height: 100%;
+}
+
+#landingPage {
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+#landingPageOverlay {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+}
+
+.parallax {
+
+    background-image: url("images/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 
 
-.navbar-nav {
-    text-align: center;
-}
 
 
 
-
-.nav-link.active, .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: white !important;
-}
 
 @media only screen and (max-width: 567px)
 {
-    .navbar-nav.ml-auto {
-        background: rgba(0, 0, 0, 0.5);
-    }
 
     .navbar-toggler {
         padding: 1px 5px;
@@ -32,22 +42,24 @@ body {
 }
 
 
-#landingPage {
-    position: relative;
-    background: url(images/background.jpg);
-    min-height: 100vh;
-    background-size: cover;
+
+#topButton{
+
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 24px;
+    width: 45px;
+    height:45px;
+    cursor: pointer;
+    display: none;
+    opacity: 0.5;
+
 }
 
-#landingPageOverlay {
-    background: rgba(0, 0, 0, 0.4);
-    height: 100vh;
+.card iframe:hover, .card img:hover, .card a:hover{
+    opacity: 0.6 !important;
 }
-
-
-
-
-
 
 
 

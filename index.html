@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage</title>
+    <title>Irinan Portfolio</title>
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Fira+Sans|Playfair+Display">
     <link rel="stylesheet" href="css/bs-custom.css">
@@ -12,7 +12,7 @@
 <body>
 
 <!-------------------Landing Page----------------------->
-<div id="landingPage">
+<div id="landingPage" class="parallax">
 
     <nav class="navbar navbar-expand-sm bg-opaque navbar-dark px-4 py-3 text-uppercase">
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -21,12 +21,18 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto text-center">
                 <li class="nav-item">
                     <a class="nav-link" href="#landingPage">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu bg-opaque" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-center" href="#media">Media</a>
+                        <a class="dropdown-item text-center" href="#web">Web</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
@@ -35,7 +41,7 @@
         </div>
     </nav>
     <div id="landingPageOverlay">
-        <div class="d-flex justify-content-center py-8">
+        <div class="d-flex justify-content-center align-items-center" style="height: 70vh;">
             <div class="text-center">
                 <h1>Irina Konovalova</h1>
                 <div class="d-flex justify-content-center pb-2">
@@ -49,8 +55,9 @@
 
 <!---------------------Portfolio------------------------->
 <div id="portfolio">
+    <h1 class="text-center p-4">Portfolio</h1>
     <section class="container" id="media">
-        <h1 class="text-center p-4">Portfolio</h1>
+
         <h3 class="text-center pb-5">Media</h3>
         <div class="row">
 
@@ -121,65 +128,55 @@
     <div class="container" id="web">
         <div class="row">
             <div class="col-sm-4">
-                <div class="card bg-dark border-secondary mb-4">
+                <div class="card bg-dark border-secondary mb-4 zoom">
                     <div class="card-body">
                         <h5 class="card-title">jQuery 1-3</h5>
-                        <a href="web/jQuery1-3/jqbasiclab1.html" class="btn btn-primary btn-sm" target="_blank">Linkki
-                            tehtävään</a>
+                        <a href="web/jQuery1-3/jqbasiclab1.html" class="btn btn-primary btn-sm" target="_blank">Linkki</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="card bg-dark border-secondary mb-4">
+                <div class="card bg-dark border-secondary mb-4 zoom">
                     <div class="card-body">
                         <h5 class="card-title">jQuery 4</h5>
-                        <a href="web/jQuery4/ex4.html" class="btn btn-primary btn-sm" target="_blank">Linkki
-                            tehtävään</a>
+                        <a href="web/jQuery4/ex4.html" class="btn btn-primary btn-sm" target="_blank">Linkki</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="card bg-dark border-secondary mb-4">
+                <div class="card bg-dark border-secondary mb-4 zoom">
                     <div class="card-body">
                         <h5 class="card-title">jQuery 5</h5>
-                        <a href="web/jQuery5/animate.html" class="btn btn-primary btn-sm" target="_blank">Linkki
-                            tehtävään</a>
+                        <a href="web/jQuery5/animate.html" class="btn btn-primary btn-sm" target="_blank">Linkki</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="card bg-dark border-secondary mb-4">
+                <div class="card bg-dark border-secondary mb-4 zoom">
                     <div class="card-body">
                         <h5 class="card-title"> jQuery + Ajax & Bootstrap 2</h5>
-                        <a href="web/Bootstrap2/ajax.html" class="btn btn-primary btn-sm" target="_blank">Linkki
-                            tehtävään</a>
+                        <a href="web/Bootstrap2/ajax.html" class="btn btn-primary btn-sm" target="_blank">Linkki</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="card bg-dark border-secondary mb-4">
+                <div class="card bg-dark border-secondary mb-4 zoom">
                     <div class="card-body">
                         <h5 class="card-title">Bootstrap 1</h5>
-                        <a href="web/Bootstrap1/index.html" class="btn btn-primary btn-sm" target="_blank">Linkki
-                            tehtävään</a>
+                        <a href="web/Bootstrap1/index.html" class="btn btn-primary btn-sm" target="_blank">Linkki</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="card bg-dark border-secondary mb-4">
+                <div class="card bg-dark border-secondary mb-4 zoom">
                     <div class="card-body">
                         <h5 class="card-title">Bootstrap Kustomointi</h5>
-                        <a href="web/BootstrapKustomointi/index.html" class="btn btn-primary btn-sm" target="_blank">Linkki
-                            tehtävään</a>
+                        <a href="web/BootstrapKustomointi/index.html" class="btn btn-primary btn-sm" target="_blank">Linkki</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <a class="btn btn-info align-items-center" type="button" href="#landingPage" id="topButton">
-        <ion-icon name="arrow-up-outline"></ion-icon>
-    </a>
 </div>
 
 <!---------------------About------------------------------>
@@ -205,6 +202,10 @@
         </div>
     </article>
 </section>
+
+<a class="btn btn-primary align-items-center" type="button" href="#landingPage" id="topButton">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+</a>
 
 
 

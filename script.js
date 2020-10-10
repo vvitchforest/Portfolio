@@ -1,4 +1,14 @@
 $(function() {
+
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 40) {
+      $('#topButton').css('display', 'flex').fadeIn();
+    } else {
+      $('#topButton').fadeOut();
+    }
+  });
+
   $('a').click(function(e) {
     if (this.hash !== '') {
       e.preventDefault();
@@ -12,4 +22,6 @@ $(function() {
       });
     }
   });
+
+
 });
