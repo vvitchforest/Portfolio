@@ -23,13 +23,6 @@ body, html {
     background-size: cover;
 }
 
-
-
-
-
-
-
-
 @media only screen and (max-width: 567px)
 {
 
@@ -40,8 +33,6 @@ body, html {
     }
 
 }
-
-
 
 #topButton{
 
@@ -57,9 +48,7 @@ body, html {
 
 }
 
-.card iframe:hover, .card img:hover, .card a:hover{
-    opacity: 0.6 !important;
-}
+
 
 
 
