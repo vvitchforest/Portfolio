@@ -14,6 +14,22 @@ body, html {
     height: 100vh;
 }
 
+#landingPage h1 {
+    font-size: 34px;
+}
+
+#landingPage p {
+    font-size: 20px;
+
+}
+
+#profileImg {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+
 .parallax {
 
     background-image: url("images/background.jpg");
