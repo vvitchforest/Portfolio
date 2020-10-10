@@ -1,0 +1,65 @@
+// Your variable overrides
+$body-bg: #000;
+$body-color: #fff;
+$spacer: 1rem;
+$font-family-base: "Playfair Display";
+$headings-font-family: "Fira Sans", sans-serif;
+
+$btn-border-radius: 0rem;
+$btn-border-radius-sm: 0;
+
+$jumbotron-bg: #fff;
+$jumbotron-color: #000;
+
+$card-border-radius: 1.5rem;
+$card-border-width: 0.001rem;
+$card-inner-border-radius: 0;
+
+$dropdown-border-radius: 0;
+$navbar-dark-color:  rgba(#FFF, .5);
+$dropdown-link-color: $navbar-dark-color;
+$dropdown-link-hover-bg: #CCC;
+$dropdown-min-width: 6rem;
+
+$spacers: (
+        0: 0,
+        1: ($spacer * .25),
+        2: ($spacer * .5),
+        3: $spacer,
+        4: ($spacer * 1.5),
+        5: ($spacer * 3),
+        6: ($spacer * 6),
+        7: ($spacer * 12),
+        8: ($spacer * 24),
+);
+
+$theme-colors: (
+
+        "dark": #000,
+        "secondary": #696969,
+        "primary": #E48031,
+        "opaque": rgba(0, 0, 0, 0.8),
+
+);
+
+nav {
+  font-family: $headings-font-family;
+}
+
+.btn {
+  font-family: $headings-font-family;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+}
+
+.jumbotron {
+  border-radius: 0 !important;
+}
+
+.card {
+  padding: 1rem;
+}
+
+// Bootstrap and its default variables
+@import "../node_modules/bootstrap/scss/bootstrap";

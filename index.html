@@ -2,9 +2,324 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Irinan Portfolio</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Fira+Sans|Playfair+Display">
+    <link rel="stylesheet" href="css/bs-custom.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-------------------Landing Page----------------------->
+<div id="landingPage" class="parallax">
+
+    <nav class="navbar navbar-expand-sm bg-opaque navbar-dark px-4 py-3 text-uppercase">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#landingPage">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu bg-opaque" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-center" href="#media">Media</a>
+                        <a class="dropdown-item text-center" href="#web">Web</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="landingPageOverlay">
+        <div class="d-flex justify-content-center align-items-center" style="height: 70vh;">
+            <div class="text-center">
+                <h1>Irina Konovalova</h1>
+                <div class="d-flex justify-content-center pb-2">
+                    <p>Tällä sivustola esittelen Digitaalisen Median Perusteet-kurssia varten palautetut tehtävät. </p>
+                </div>
+                <a class="btn btn-outline-light text-uppercase" type="button" href="#portfolio">Portfolio</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------Portfolio------------------------->
+<div id="portfolio">
+    <h1 class="text-center p-4">Portfolio</h1>
+    <section class="container" id="media">
+
+        <h3 class="text-center pb-5">Media</h3>
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/jazK-9Rrj5k"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">After Effects perusteet</h5>
+                        <p class="card-text">Parallax Effect kuva-animaatio.</p>
+                        <a href="#" class="btn btn-primary btn-sm" data-toggle="modal"
+                           data-target="#afterEffects">Avaa</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Q2TmLhJ5V2E"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Moniraita</h5>
+                        <p class="card-text">Moniraitaääni tehtävä.</p>
+                        <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#moniraita">Avaa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/gnrlF8F4F5o"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Videoeditoinnin perusteet</h5>
+                        <p class="card-text pb-5">Videoeditoinnin perusteet tehtävä. </p>
+                        <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#videoeditointi">Avaa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/geJp_NM1UAw"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Videosprintti</h5>
+                        <p class="card-text">Videosprintin aiheena on Älykkäiden ratkaisujen kehittäjäkampus. Video on
+                            kuvattu ryhmässä, johon osallistuivat Joonas Lehtoranta, Oskari Piiroinen ja Irina
+                            Konovalova. </p>
+                        <a href="#" class="btn btn-primary btn-sm" data-toggle="modal"
+                           data-target="#videosprintti">Avaa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark border-secondary mb-4">
+                    <img class="card-img-top" src="media/sarjakuvahahmo.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text pb-2">Sarjakuvahahmo.</p>
+                        <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#sarjakuvahahmo">Open
+                            image</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h3 class="text-center pb-5 pt-4">Web</h3>
+    <div class="container" id="web">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card bg-dark border-secondary mb-4 zoom">
+                    <div class="card-body">
+                        <h5 class="card-title">jQuery 1-3</h5>
+                        <a href="web/jQuery1-3/jqbasiclab1.html" class="btn btn-primary btn-sm"
+                           target="_blank">Linkki</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card bg-dark border-secondary mb-4 zoom">
+                    <div class="card-body">
+                        <h5 class="card-title">jQuery 4</h5>
+                        <a href="web/jQuery4/ex4.html" class="btn btn-primary btn-sm" target="_blank">Linkki</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card bg-dark border-secondary mb-4 zoom">
+                    <div class="card-body">
+                        <h5 class="card-title">jQuery 5</h5>
+                        <a href="web/jQuery5/animate.html" class="btn btn-primary btn-sm" target="_blank">Linkki</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card bg-dark border-secondary mb-4 zoom">
+                    <div class="card-body">
+                        <h5 class="card-title"> jQuery + Ajax & Bootstrap 2</h5>
+                        <a href="web/Bootstrap2/ajax.html" class="btn btn-primary btn-sm" target="_blank">Linkki</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card bg-dark border-secondary mb-4 zoom">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap 1</h5>
+                        <a href="web/Bootstrap1/index.html" class="btn btn-primary btn-sm" target="_blank">Linkki</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card bg-dark border-secondary mb-4 zoom">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap Kustomointi</h5>
+                        <a href="web/BootstrapKustomointi/index.html" class="btn btn-primary btn-sm" target="_blank">Linkki</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------Modals------------------------------>
+
+<div id="sarjakuvahahmo" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title">Sarjakuvahahmo</h5>
+                <button type="button" class="close text-white-50" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="d-block w-100" src="media/sarjakuvahahmo.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="afterEffects" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title">After Effects perusteet</h5>
+                <button type="button" class="close text-white-50" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body bg-dark">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/jazK-9Rrj5k"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="moniraita" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title">Moniraita</h5>
+                <button type="button" class="close text-white-50" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body bg-dark">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Q2TmLhJ5V2E"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="videoeditointi" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title">Videoeditoinnin perusteet</h5>
+                <button type="button" class="close text-white-50" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body bg-dark">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/gnrlF8F4F5o"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="videosprintti" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title">Videosprintti</h5>
+                <button type="button" class="close text-white-50" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body bg-dark">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/geJp_NM1UAw"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------About------------------------------>
+<section class="jumbotron pt-5" id="about">
+    <header class="row">
+        <div class="col d-flex justify-content-center">
+            <h1 class="pb-4">About</h1>
+        </div>
+    </header>
+    <article class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap
+                into
+                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of
+                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                like
+                Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </article>
+</section>
+
+<a class="btn btn-primary align-items-center" type="button" href="#landingPage" id="topButton">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+</a>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
